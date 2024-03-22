@@ -6,6 +6,8 @@
 
 COMMON_PATH := device/vsmart/msm8953-common
 
+TARGET_ENFORCES_QSSI := true
+
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
