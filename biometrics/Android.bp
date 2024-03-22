@@ -24,11 +24,3 @@ cc_binary {
     init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.vin8953.rc"],
     vintf_fragments: ["android.hardware.biometrics.fingerprint@2.1-service.vin8953.xml"],
 }
-
-cc_binary {
-    name: "android.hardware.biometrics.fingerprint@2.1-service.vin8953-32",
-    defaults: ["fingerprint_service_vin8953_defaults"],
-    compile_multilib: "32",
-    init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.vin8953-32.rc"],
-    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.1-service.vin8953-32.xml"],
-}
