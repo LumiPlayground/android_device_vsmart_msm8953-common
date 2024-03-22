@@ -150,6 +150,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.drm@1.4.vendor
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.vin8953
+
 # FM
 PRODUCT_PACKAGES += \
     FMRadio \
