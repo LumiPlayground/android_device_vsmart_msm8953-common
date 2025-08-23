@@ -6,9 +6,9 @@
 
 // libinit
 cc_library_static {
-    name: "libinit_casuarina",
+    name: "libinit_vin8953",
     recovery_available: true,
-    srcs: ["libinit_casuarina.cpp"],
+    srcs: ["libinit_vin8953.cpp"],
     include_dirs: [
         "system/core/init"
     ],

@@ -1,6 +1,6 @@
 soong_namespace {
     imports: [
-	"vendor/vsmart/casuarina"
+	"vendor/vsmart/msm8953-common"
     ],
 }
 
