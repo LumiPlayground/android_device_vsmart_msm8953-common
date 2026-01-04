@@ -37,6 +37,15 @@ vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
 vendor/lib/libsurround_3mic_proc.so
 
+# Audio configs
+vendor/etc/audio_platform_info.xml
+vendor/etc/audio_policy.conf
+vendor/etc/audio_policy_volumes.xml
+vendor/etc/audio_tuning_mixer.txt
+vendor/etc/mixer_paths_mtp.xml
+vendor/etc/sound_trigger_mixer_paths.xml
+vendor/etc/sound_trigger_platform_info.xml
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -285,6 +294,7 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libsmwrapper.so
 
 # Media
+vendor/etc/media_profiles_V1_0.xml
 vendor/lib/libgpustats.so
 vendor/lib/libvqzip.so
 vendor/lib64/libgpustats.so
@@ -298,7 +308,9 @@ vendor/lib64/libpdmapper.so
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
 vendor/bin/msm_irqbalance
+vendor/etc/msm_irqbalance_little_big.conf
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
+system/etc/powerhint.xml:vendor/etc/powerhint.xml
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/perfconfigstore.xml
@@ -352,9 +364,13 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so|fdc8542c93c3e0572a172040bb6bb741baba348e
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so|f34f3f363932160ef659ec21543b0d33f0215dbc
 
+# Public libraries
+vendor/etc/public.libraries.txt
+
 # QMI
 system/etc/permissions/qti_libpermissions.xml
 system/etc/permissions/qti_permissions.xml
+vendor/etc/sec_config
 vendor/bin/irsc_util
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
@@ -412,6 +428,8 @@ vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Radio
+system/etc/permissions/privapp-permissions-qti.xml:system_ext/etc/permissions/privapp-permissions-qti.xml
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml:system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 product/app/QtiTelephonyService/QtiTelephonyService.apk:system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 product/etc/permissions/qcrilhook.xml:system_ext/etc/permissions/qcrilhook.xml
 product/etc/permissions/telephonyservice.xml:system_ext/etc/permissions/telephonyservice.xml
@@ -600,3 +618,7 @@ vendor/lib64/libtime_genoff.so
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+
+# Wi-Fi configurations
+vendor/etc/wifi/WCNSS_qcom_cfg.ini
+vendor/etc/wifi/p2p_supplicant_overlay.conf
